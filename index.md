@@ -25,7 +25,7 @@ Monitorando costantemente questi tre aspetti avremo modo di pilotare la nostra a
 ***Forecasto*** permette di analizzare gli aspetti **Operazioni**, **Flusso di cassa** e **Pivot** in funzione dell'orizzonte temporale che si vuole considerare: se vogliamo concentrarci sui debiti e crediti certi piuttosto che su quello che prevediamo di vendere o comprare, basterà selezionare la vista **Attuale**, mentre se vogliamo intervenire sugli ordini da emettere o da evadere selezioneremo **Ordini**. La vista **Prospect** ci permetterà di concentrarci sulle trattative in corso e fare si che si concludano nei tempi prefissati. La vista **Budget** invece servirà a non perdere di vista gli obiettivi dell'anno o del periodo selezionato, mettendo in pratica le azioni e le tattiche necessarie. 
 
 
-
+<!--
 
 ### Budget
 
@@ -35,3 +35,4 @@ Le operazioni di tipo budget sono operazioni che si prevede di svolgere. Ad esem
 
 Le operazioni di tipo prospect sono operazioni che verranno molto probabilmente svolte entro un certo periodo, esempio: sono prospect quelle azioni inerenti clienti a cui sono state inviate offerte commerciali, in attesa di accettazione.
 
+-->
