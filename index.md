@@ -1,5 +1,6 @@
-# Forecasto
-Lo strumento quotidiano di supervisione delle operazioni e previsioni del business, per aziende ad alta intensità operativa.
+<center>![ForecastoLogo](images/ForecastoLogo.png)</center>
+<center><h1>Forecasto</h1></center>
+<center>Lo strumento quotidiano di supervisione delle operazioni e previsioni del business, per aziende ad alta intensità operativa.</center>
 
 ## Basic concepts
 ***Forecasto*** si sviluppa sui quattro concetti portanti del business con un differente orizzonte temporale e livello di certezza:
