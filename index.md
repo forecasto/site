@@ -24,15 +24,69 @@ Monitorando costantemente questi tre aspetti avremo modo di pilotare la nostra a
 
 ***Forecasto*** permette di analizzare gli aspetti **Operazioni**, **Flusso di cassa** e **Pivot** in funzione dell'orizzonte temporale che si vuole considerare: se vogliamo concentrarci sui debiti e crediti certi piuttosto che su quello che prevediamo di vendere o comprare, basterà selezionare la vista **Attuale**, mentre se vogliamo intervenire sugli ordini da emettere o da evadere selezioneremo **Ordini**. La vista **Prospect** ci permetterà di concentrarci sulle trattative in corso e fare si che si concludano nei tempi prefissati. La vista **Budget** invece servirà a non perdere di vista gli obiettivi dell'anno o del periodo selezionato, mettendo in pratica le azioni e le tattiche necessarie. 
 
+### Esempi per le voci Attuali
 
-<!--
+![Forecast Attuale](images/Forecast_Attuale.png)
+Tutte le cose certe, ormai definite e fissate nel tempo come costi, affitti, premi di assicurazione, abbonamente, buste paga collaboratori, fatture attive e passive vengono inserite nella sezione "Attuali".
 
-### Budget
+### Esempi per le voci Ordini
 
-Le operazioni di tipo budget sono operazioni che si prevede di svolgere. Ad esempio: potenziali clienti con cui si è in contatto per una trattativa o prodotti che si intende vendere nel prossimo futuro.
+![Forecast Attuale](images/Forecast_Ordini.png)
+Gli ordini attivi e passivi vengono inseriti in questa sezione.
 
-#### Prospect
+### Esempi per le voci Prospect
 
-Le operazioni di tipo prospect sono operazioni che verranno molto probabilmente svolte entro un certo periodo, esempio: sono prospect quelle azioni inerenti clienti a cui sono state inviate offerte commerciali, in attesa di accettazione.
+![Forecast Attuale](images/Forecast_Prospect.png)
+Tutte le trattative in corso possono essere inserite nella sezione Prospect. Tipicamente si inseriscono i clienti tali o potenziali a cui sono state inviate offerte.
 
--->
+### Esempi per le voci Budget
+
+![Forecast Attuale](images/Forecast_Budget.png)
+In questa sezione possono trovare posto tutte le voci sia di costo che di ricavo previste nel tempo, ma non certe. Solitamente si inseriscono i costi e i ricavi derivanti dalle vendite mensili di prodotti e servizi commercializzati dall'azienda.
+
+## La timeline di Forecasto
+
+Dal Budget agli Attuali, attraverso Prospect e Ordini, questo è il percorso completo che un operazione compie.
+Le operazioni però possono entrare anche direttamente in una sezione, ad esempio: la voce AFFITTO può entrare negli actual se il contratto già esiste e si impostano le scadenze di pagamento mese per mese.
+
+## Le azioni
+
+![Forecast Azioni](images/Forecast_Azioni.png)
+
+Ogni operazione può essere associata ad una o più azioni da svolgere perchè questa operazione si concretizzi entro la data prefissata e possa passare ad esempio da Ordine ad Attuale. Ogni azione viene associata ad un "Responsabile" che se ne occupa, ad una data di scadenza e può essere smarcata come compiuta.
+
+La combinazione di operazioni e azioni consente di mantenere il focus sulle cose realmente importanti e dare le giuste priorità alle attività aziendali.
+
+## Le viste analitiche
+
+### Operazioni
+
+![Forecast Operazioni](images/Forecast_Operazioni.png)
+La vista operazioni è quella che consente di capire "cosa dobbiamo fare oggi ?". Selezionando la check-box "Prossime azioni" verranno mostrate solo le prime in ordine temporale di ogni operazione, così da concentrare l'attenzione sulle prime cose fattibili. La vista è filtrabile anche in altri modi. Molto utile è il filtro per "Responsabile" che ci permette di vedere di che cosa si deve occupare ogni singolo responsabile.
+
+### Flusso di cassa
+
+#### Mensile inclusi i prospect
+
+![Forecast flusso di cassa mensile](images/Forecast_cashflow_monthly.png)
+
+#### Giornaliero inclusi i prospect
+
+![Forecast flusso di cassa giornaliero](images/Forecast_cashflow_daily.png)
+
+#### Mensile incluso il budget
+
+![Forecast flusso di cassa mensile con budget](images/Forecast_cashflow_budget_monthly.png)
+
+### Pivot sui conti con bilancio
+
+#### Annuale con budget
+
+![Forecast bilancio annuale con budget](images/Forecast_balance_pivot_yearly.png)
+
+#### Mensile con budget
+
+![Forecast bilancio annuale con budget](images/Forecast_balance_pivot_monthly.png)
+
+## Copyright
+**Forecasto** è un software realizzato da Carlo Cassinari (c) 2022
