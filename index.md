@@ -49,13 +49,93 @@ In questa sezione possono trovare posto tutte le voci sia di costo che di ricavo
 Dal Budget agli Attuali, attraverso Prospect e Ordini, questo è il percorso completo che un operazione compie.
 Le operazioni però possono entrare anche direttamente in una sezione, ad esempio: la voce AFFITTO può entrare negli actual se il contratto già esiste e si impostano le scadenze di pagamento mese per mese.
 
+## I campi delle righe operazioni
+
+Tutti i campi delle righe operazioni sono funzionali alle analisi che vengono effettuate nelle viste del programma.
+
+Partendo da sinistra:
+
+- **Numero (#)**: E' un numero di riga, può essere utile per identificare la riga in modo univoco in fase di esportazione CSV
+- **A**: Anno in cui la riga entra effettivamente nel cashflow
+- **M**: Mese in cui la riga entra effettivamente  nel cashflow
+- **G**: Giorno in cui la riga entra effettivamente  nel cashflow
+- **Checkbox**: può assumere significati differenti in base alla sezione:
+	- Attuale: pagata si/no
+	- Ordini: evaso si/no
+	- Prospect: vinto si/no
+	- Budget: raggiunto si/no
+- **Conto**: è il conto in cui verranno raggruppate le voci a livello di PIVOT
+- **Referenza**: è il dettaglio del conto, un cliente, un fornitore, un asset
+- **ID Tr.**: può assumere significati differenti in base alla sezione:
+	- Attuale: numero del documento associato (fattura, ricevuta, contratto, etc)
+	- Ordini: numero dell'ordine di acquisto o vendita
+	- Prospect: numero dell'offerta di acquisto o vendita
+	- Budget: può identificare un ulteriore livello di dettaglio, non sempre viene usato
+- **Data**: può assumere un significato differente in base alla sezione:
+	- Attuale: data di scadenza del pagamento (può essere differente da A-M-G)
+	- Ordini: data di evasione dell'ordine
+	- Prospect: data di scadenza dell'offerta
+	- Budget: data in cui si prevede di vendere o acquistare un bene o servizio
+- **Ammontare**: importo imponibile della riga
+- **IVA**: Aliquota IVA in percentuale
+- **Totale**: imponibile + IVA
+
+## Regole dei colori
+
+Le righe delle operazioni possono assumere differenti colorazioni a seconda dello stato in cui si trovano:
+
+- **Nero**: nulla da segnalare
+- **Azzurrino**: la riga è stata convertita da una sezione precedente, ad esempio: se vedo una riga azzurrina negli Ordini significa che è stata convertita da Prospect
+- **Arancione**: la data di scadenza della riga è passata e la check-box della riga non è selezionata
+- **Rosso**: la data di ingresso nel cashflow della riga è passata e la check-box della riga non è selezionata
+
+I colori sopra elencati vengono sovrascritti dal successivo, es: se una riga è convertita, quindi azzurrina, in caso di scadenza passata sarà comunque arancione o rossa.
+
+## Come inserire le operazioni
+
+Selezionata la sezione interessata tra Attuale, Ordini, Prospect e Budget cliccheremo sul pulsante `Aggiungi`. Una nuova riga viene inserita in fondo alla tabella.
+Immaginiamo di voler inserire le righe inerenti i costi dell'affitto mensile.
+Sappiamo che l'importo annuale è di € 9.600,00.
+Andremo ad inserire quindi la riga compilando tutti i campi.
+A: 2022
+M: 1
+G: 6
+Conto: Affitto
+Referenza: Ufficio
+ID Tr: <numero del contratto>
+Data: 06/01/2022
+Ammontare: 9600
+Iva: 0
+
+Adesso possiamo "splittare" la riga appena inserita cliccando sul campo "numero" per selezionarla, poi cliccando su `Dividi` apparirà una finestra di dialogo come segue:
+
+![Forecast Azioni](images/Forecast_split_operazione.png)
+
+Impostando il campo "Dividi riga selezionata" a 12, selezionando la casella "Dividi ammontare" e selezionando "Incrementa di Mese" verranno costruite altre 11 righe con importo di € 800,00 e scadenze incrementali di un mese.
+
+## Come modificare le operazioni
+
+Le operazioni possono essere modificate singolarmente cliccando sulla cella desiderata e modificandone il valore.
+Volendo modificare più righe in un colpo solo è necessario selezionarle (Click + Shift) e poi cliccare su `Modifica multi` per far comparire la finestra di dialogo come segue:
+
+![Forecast Azioni](images/Forecast_modifica_multi.png)
+
+La modifica può essere operata sui campi mostrati nella finestra di dialogo. Verranno modificati solo i campi che verranno compilati.
+
+Particolare attenzione va posta alla funzione "Operazione" che permette di spostare in blocco righe di operazioni da un mese all'altro o giorno o anno. Ad esempio, inserendo il valore 1 nella casella M e lasciando la selezione su "Aggiungi" tutte le righe selezionate verranno automaticamente spostate avanti di un mese per l'ingresso nel flusso di cassa.
+
 ## Le azioni
 
 ![Forecast Azioni](images/Forecast_Azioni.png)
 
-Ogni operazione può essere associata ad una o più azioni da svolgere perchè questa operazione si concretizzi entro la data prefissata e possa passare ad esempio da Ordine ad Attuale. Ogni azione viene associata ad un "Responsabile" che se ne occupa, ad una data di scadenza e può essere smarcata come compiuta.
+Ogni operazione può essere associata ad una o più azioni da svolgere perchè la stessa si concretizzi entro la data prefissata e possa passare ad esempio da Ordine ad Attuale. Ogni azione viene associata ad un "Responsabile" che se ne occupa, ad una data di scadenza e può essere smarcata come compiuta.
 
 La combinazione di operazioni e azioni consente di mantenere il focus sulle cose realmente importanti e dare le giuste priorità alle attività aziendali.
+
+Per attivare il pannello di elenco delle azioni associate ad un operazione si clicca sulla icona "Azioni".
+Evidenziando la riga dell'operazione interessata verranno visualizzate le relative azioni.
+
+E' possibile memorizzare delle sequenze di azioni in "modelli" riutilizzabili.
 
 ## Le viste analitiche
 
@@ -65,6 +145,8 @@ La combinazione di operazioni e azioni consente di mantenere il focus sulle cose
 La vista operazioni è quella che consente di capire "cosa dobbiamo fare oggi ?". Selezionando la check-box "Prossime azioni" verranno mostrate solo le prime in ordine temporale di ogni operazione, così da concentrare l'attenzione sulle prime cose fattibili. La vista è filtrabile anche in altri modi. Molto utile è il filtro per "Responsabile" che ci permette di vedere di che cosa si deve occupare ogni singolo responsabile.
 
 ### Flusso di cassa
+
+Seguono alcuni esempi di analisi del flusso di cassa. Forecasto permette di analizzare il flusso di cassa considerando i diversi orizzonti temporali, dall'Attuale al Budget, simulando alla profondità desiderata considerando quindi la situazione in caso di acquisizione ordini, conversione o meno di clienti. Questa vista mette in evidenza di colore rosso le righe (giorni, mesi o anni) in cui il saldo va in negativo.
 
 #### Mensile inclusi i prospect
 
@@ -80,6 +162,8 @@ La vista operazioni è quella che consente di capire "cosa dobbiamo fare oggi ?"
 
 ### Pivot sui conti con bilancio
 
+Un controllo sui costi e sui ricavi è sempre importante per individuare situazioni che alla lunga possono nuocere all'azienda. Inoltre, poter simulare il bilancio su base mese o anno considerando Attuale, Ordini, Prospect e Budget è di grande utilità per verificare che i target di costi e ricavi rispondano alle esigenze di bilancio a breve e lungo termine.
+
 #### Annuale con budget
 
 ![Forecast bilancio annuale con budget](images/Forecast_balance_pivot_yearly.png)
@@ -87,6 +171,9 @@ La vista operazioni è quella che consente di capire "cosa dobbiamo fare oggi ?"
 #### Mensile con budget
 
 ![Forecast bilancio annuale con budget](images/Forecast_balance_pivot_monthly.png)
+
+
+
 
 ## Copyright
 **Forecasto** è un software realizzato da Carlo Cassinari (c) 2022
