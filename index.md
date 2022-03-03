@@ -1,6 +1,29 @@
-<center>![ForecastoLogo](images/ForecastoLogo.png)</center>
+<style>img {width:100%}</style>
+<center><img src="images/ForecastoLogo.png" style="width:200px"/></center>
 <center><h1>Forecasto</h1></center>
 <center>Lo strumento quotidiano di supervisione delle operazioni e previsioni del business, per aziende ad alta intensità operativa.</center>
+
+## Cashflow, Bilancio, CRM, Operations
+
+Forecasto mira ad essere lo strumento di utilizzo quotidiano che ti supporta nelle decisioni più importanti. Ecco alcuni dei casi d'uso in cui Forecasto da il meglio di se, e di te.
+
+- Cashflow previsionale
+- Controllo dei costi
+- Controllo delle scadenze di pagamento
+- Simulazione di bilancio con budget
+- Gestione delle trattative "calde" 
+
+Il tutto con un insieme di relazioni tra operazioni e attività da svolgere suddivise per responsabile o reparto.
+
+Oltre a questo permette di verificare velocemente alcune cose come:
+
+- Fatturato per cliente/mese
+- Costi mensili totali, fissi e variabili
+- Operatività quotidiana dei responsabili o reparti
+
+## Indice dei contenuti
+- [Section 1](#toc_1)
+- [Section 2](#toc_23)
 
 ## Basic concepts
 ***Forecasto*** si sviluppa sui quattro concetti portanti del business con un differente orizzonte temporale e livello di certezza:
@@ -26,23 +49,28 @@ Monitorando costantemente questi tre aspetti avremo modo di pilotare la nostra a
 
 ### Esempi per le voci Attuali
 
-![Forecast Attuale](images/Forecast_Attuale.png)
 Tutte le cose certe, ormai definite e fissate nel tempo come costi, affitti, premi di assicurazione, abbonamente, buste paga collaboratori, fatture attive e passive vengono inserite nella sezione "Attuali".
+
+![Forecast Attuale](images/Forecast_Attuale.png)
 
 ### Esempi per le voci Ordini
 
-![Forecast Attuale](images/Forecast_Ordini.png)
 Gli ordini attivi e passivi vengono inseriti in questa sezione.
+
+![Forecast Attuale](images/Forecast_Ordini.png)
+
 
 ### Esempi per le voci Prospect
 
-![Forecast Attuale](images/Forecast_Prospect.png)
 Tutte le trattative in corso possono essere inserite nella sezione Prospect. Tipicamente si inseriscono i clienti tali o potenziali a cui sono state inviate offerte.
+
+![Forecast Attuale](images/Forecast_Prospect.png)
 
 ### Esempi per le voci Budget
 
-![Forecast Attuale](images/Forecast_Budget.png)
 In questa sezione possono trovare posto tutte le voci sia di costo che di ricavo previste nel tempo, ma non certe. Solitamente si inseriscono i costi e i ricavi derivanti dalle vendite mensili di prodotti e servizi commercializzati dall'azienda.
+
+![Forecast Attuale](images/Forecast_Budget.png)
 
 ## Il ciclo di vita di un operazione
 
@@ -159,8 +187,9 @@ E' possibile memorizzare delle sequenze di azioni in "modelli" riutilizzabili.
 
 ### Operazioni
 
-![Forecast Operazioni](images/Forecast_Operazioni.png)
 La vista operazioni è quella che consente di capire "cosa dobbiamo fare oggi ?". Selezionando la check-box "Prossime azioni" verranno mostrate solo le prime in ordine temporale di ogni operazione, così da concentrare l'attenzione sulle prime cose fattibili. La vista è filtrabile anche in altri modi. Molto utile è il filtro per "Responsabile" che ci permette di vedere di che cosa si deve occupare ogni singolo responsabile.
+
+![Forecast Operazioni](images/Forecast_Operazioni.png)
 
 ### Flusso di cassa
 
@@ -190,8 +219,6 @@ Un controllo sui costi e sui ricavi è sempre importante per individuare situazi
 
 ![Forecast bilancio annuale con budget](images/Forecast_balance_pivot_monthly.png)
 
-
-
-
+---
 ## Copyright
 **Forecasto** è un software realizzato da Carlo Cassinari (c) 2022

@@ -9,287 +9,135 @@
 
 
 <style type="text/css">
-body {
-  font-family: Helvetica, arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  padding: 30px; }
-
-body > *:first-child {
-  margin-top: 0 !important; }
-body > *:last-child {
-  margin-bottom: 0 !important; }
-
-a {
-  color: #4183C4; }
-a.absent {
-  color: #cc0000; }
-a.anchor {
-  display: block;
-  padding-left: 30px;
-  margin-left: -30px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
-  padding: 0;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-  cursor: text;
-  position: relative; }
-
-h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
-  text-decoration: none; }
-
-h1 tt, h1 code {
-  font-size: inherit; }
-
-h2 tt, h2 code {
-  font-size: inherit; }
-
-h3 tt, h3 code {
-  font-size: inherit; }
-
-h4 tt, h4 code {
-  font-size: inherit; }
-
-h5 tt, h5 code {
-  font-size: inherit; }
-
-h6 tt, h6 code {
-  font-size: inherit; }
-
-h1 {
-  font-size: 28px;
-  color: black; }
-
-h2 {
-  font-size: 24px;
-  border-bottom: 1px solid #cccccc;
-  color: black; }
-
-h3 {
-  font-size: 18px; }
-
-h4 {
-  font-size: 16px; }
-
-h5 {
-  font-size: 14px; }
-
-h6 {
-  color: #777777;
-  font-size: 14px; }
-
-p, blockquote, ul, ol, dl, li, table, pre {
-  margin: 15px 0; }
-
-hr {
-  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
-  border: 0 none;
-  color: #cccccc;
-  height: 4px;
-  padding: 0;
-}
-
-body > h2:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-body > h1:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-  body > h1:first-child + h2 {
-    margin-top: 0;
-    padding-top: 0; }
-body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
-  margin-top: 0;
-  padding-top: 0; }
-
-h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
-  margin-top: 0; }
-
-li p.first {
-  display: inline-block; }
-li {
-  margin: 0; }
-ul, ol {
-  padding-left: 30px; }
-
-ul :first-child, ol :first-child {
-  margin-top: 0; }
-
-dl {
-  padding: 0; }
-  dl dt {
-    font-size: 14px;
-    font-weight: bold;
-    font-style: italic;
-    padding: 0;
-    margin: 15px 0 5px; }
-    dl dt:first-child {
-      padding: 0; }
-    dl dt > :first-child {
-      margin-top: 0; }
-    dl dt > :last-child {
-      margin-bottom: 0; }
-  dl dd {
-    margin: 0 0 15px;
-    padding: 0 15px; }
-    dl dd > :first-child {
-      margin-top: 0; }
-    dl dd > :last-child {
-      margin-bottom: 0; }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
 blockquote {
-  border-left: 4px solid #dddddd;
-  padding: 0 15px;
-  color: #777777; }
-  blockquote > :first-child {
-    margin-top: 0; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #282a36;
+    margin: 10px 13px 10px 13px;
+}
 table {
-  padding: 0;border-collapse: collapse; }
-  table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
-    margin: 0;
-    padding: 0; }
-    table tr:nth-child(2n) {
-      background-color: #f8f8f8; }
-    table tr th {
-      font-weight: bold;
-      border: 1px solid #cccccc;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr td {
-      border: 1px solid #cccccc;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr th :first-child, table tr td :first-child {
-      margin-top: 0; }
-    table tr th :last-child, table tr td :last-child {
-      margin-bottom: 0; }
-
-img {
-  max-width: 100%; }
-
-span.frame {
-  display: block;
-  overflow: hidden; }
-  span.frame > span {
-    border: 1px solid #dddddd;
-    display: block;
-    float: left;
-    overflow: hidden;
-    margin: 13px 0 0;
-    padding: 7px;
-    width: auto; }
-  span.frame span img {
-    display: block;
-    float: left; }
-  span.frame span span {
-    clear: both;
-    color: #333333;
-    display: block;
-    padding: 5px 0 0; }
-span.align-center {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-center > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: center; }
-  span.align-center span img {
-    margin: 0 auto;
-    text-align: center; }
-span.align-right {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px 0 0;
-    text-align: right; }
-  span.align-right span img {
-    margin: 0;
-    text-align: right; }
-span.float-left {
-  display: block;
-  margin-right: 13px;
-  overflow: hidden;
-  float: left; }
-  span.float-left span {
-    margin: 13px 0 0; }
-span.float-right {
-  display: block;
-  margin-left: 13px;
-  overflow: hidden;
-  float: right; }
-  span.float-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: right; }
-
-code, tt {
-  margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px; }
-
-pre code {
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  border: none;
-  background: transparent; }
-
-.highlight pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; }
-
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;
+}
+a {
+    color: #59acf3;
+}
+a:hover {
+    color: #a7d8ff;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+	color: #ff4a14;
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; }
-  pre code, pre tt {
-    background-color: transparent;
-    border: none; }
-
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #bf370f;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #282a36;
+    color: #ff4a14;
+    font-size: 11px;
+    padding: 0;
+}
 sup {
     font-size: 0.83em;
     vertical-align: super;
     line-height: 0;
 }
-
 kbd {
   display: inline-block;
   padding: 3px 5px;
@@ -301,27 +149,23 @@ kbd {
   border: solid 1px #ccc;
   border-bottom-color: #bbb;
   border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb
+  box-shadow: inset 0 -1px 0 #bbb;
 }
-
 * {
 	-webkit-print-color-adjust: exact;
 }
 @media screen and (min-width: 914px) {
     body {
         width: 854px;
-        margin:0 auto;
+        margin:10px auto;
     }
 }
 @media print {
 	table, pre {
 		page-break-inside: avoid;
 	}
-	pre {
-		word-wrap: break-word;
-	}
   body {
-    padding: 2cm; 
+    margin: 2cm; 
   }
 }
 </style>
@@ -331,11 +175,42 @@ kbd {
 
 <body>
 
-<p><center><img src="images/ForecastoLogo.png" alt="ForecastoLogo"></center>
+<style>img {width:100%}</style>
+
+<p><center><img src="images/ForecastoLogo.png" style="width:200px"/></center>
 <center><h1>Forecasto</h1></center>
 <center>Lo strumento quotidiano di supervisione delle operazioni e previsioni del business, per aziende ad alta intensità operativa.</center></p>
 
-<h2 id="toc_0">Basic concepts</h2>
+<h2 id="toc_0">Cashflow, Bilancio, CRM, Operations</h2>
+
+<p>Forecasto mira ad essere lo strumento di utilizzo quotidiano che ti supporta nelle decisioni più importanti. Ecco alcuni dei casi d&#39;uso in cui Forecasto da il meglio di se, e di te.</p>
+
+<ul>
+<li>Cashflow previsionale</li>
+<li>Controllo dei costi</li>
+<li>Controllo delle scadenze di pagamento</li>
+<li>Simulazione di bilancio con budget</li>
+<li>Gestione delle trattative &quot;calde&quot; </li>
+</ul>
+
+<p>Il tutto con un insieme di relazioni tra operazioni e attività da svolgere suddivise per responsabile o reparto.</p>
+
+<p>Oltre a questo permette di verificare velocemente alcune cose come:</p>
+
+<ul>
+<li>Fatturato per cliente/mese</li>
+<li>Costi mensili totali, fissi e variabili</li>
+<li>Operatività quotidiana dei responsabili o reparti</li>
+</ul>
+
+<h2 id="toc_1">Indice dei contenuti</h2>
+
+<ul>
+<li><a href="#toc_1">Section 1</a></li>
+<li><a href="#toc_23">Section 2</a></li>
+</ul>
+
+<h2 id="toc_2">Basic concepts</h2>
 
 <p><strong><em>Forecasto</em></strong> si sviluppa sui quattro concetti portanti del business con un differente orizzonte temporale e livello di certezza:</p>
 
@@ -362,17 +237,194 @@ kbd {
 
 <p><strong><em>Forecasto</em></strong> permette di analizzare gli aspetti <strong>Operazioni</strong>, <strong>Flusso di cassa</strong> e <strong>Pivot</strong> in funzione dell&#39;orizzonte temporale che si vuole considerare: se vogliamo concentrarci sui debiti e crediti certi piuttosto che su quello che prevediamo di vendere o comprare, basterà selezionare la vista <strong>Attuale</strong>, mentre se vogliamo intervenire sugli ordini da emettere o da evadere selezioneremo <strong>Ordini</strong>. La vista <strong>Prospect</strong> ci permetterà di concentrarci sulle trattative in corso e fare si che si concludano nei tempi prefissati. La vista <strong>Budget</strong> invece servirà a non perdere di vista gli obiettivi dell&#39;anno o del periodo selezionato, mettendo in pratica le azioni e le tattiche necessarie. </p>
 
-<!--
+<h3 id="toc_3">Esempi per le voci Attuali</h3>
 
-### Budget
+<p>Tutte le cose certe, ormai definite e fissate nel tempo come costi, affitti, premi di assicurazione, abbonamente, buste paga collaboratori, fatture attive e passive vengono inserite nella sezione &quot;Attuali&quot;.</p>
 
-Le operazioni di tipo budget sono operazioni che si prevede di svolgere. Ad esempio: potenziali clienti con cui si è in contatto per una trattativa o prodotti che si intende vendere nel prossimo futuro.
+<p><img src="images/Forecast_Attuale.png" alt="Forecast Attuale"></p>
 
-#### Prospect
+<h3 id="toc_4">Esempi per le voci Ordini</h3>
 
-Le operazioni di tipo prospect sono operazioni che verranno molto probabilmente svolte entro un certo periodo, esempio: sono prospect quelle azioni inerenti clienti a cui sono state inviate offerte commerciali, in attesa di accettazione.
+<p>Gli ordini attivi e passivi vengono inseriti in questa sezione.</p>
 
--->
+<p><img src="images/Forecast_Ordini.png" alt="Forecast Attuale"></p>
+
+<h3 id="toc_5">Esempi per le voci Prospect</h3>
+
+<p>Tutte le trattative in corso possono essere inserite nella sezione Prospect. Tipicamente si inseriscono i clienti tali o potenziali a cui sono state inviate offerte.</p>
+
+<p><img src="images/Forecast_Prospect.png" alt="Forecast Attuale"></p>
+
+<h3 id="toc_6">Esempi per le voci Budget</h3>
+
+<p>In questa sezione possono trovare posto tutte le voci sia di costo che di ricavo previste nel tempo, ma non certe. Solitamente si inseriscono i costi e i ricavi derivanti dalle vendite mensili di prodotti e servizi commercializzati dall&#39;azienda.</p>
+
+<p><img src="images/Forecast_Budget.png" alt="Forecast Attuale"></p>
+
+<h2 id="toc_7">Il ciclo di vita di un operazione</h2>
+
+<p>Dal <strong>Budget</strong> agli <strong>Attuali</strong>, attraverso <strong>Prospect</strong> e <strong>Ordini</strong>, questo è il percorso completo che un operazione compie.</p>
+
+<p>Le operazioni però possono entrare anche direttamente in una sezione, ad esempio: la voce AFFITTO può entrare subito nell&#39;Attuale se il contratto già esiste e si impostano le scadenze di pagamento mese per mese.</p>
+
+<p>Al contrario, un operazione che entra nel Prospect come offerta inviata a cliente, quando si riceverà l&#39;ordine verrà convertita e spostata nella sezione Ordini. </p>
+
+<p>Quando l&#39;ordine verrà evaso, la riga potrà essere ulteriormente convertita in Attuale. La data della sezione A-M-G dovrà corrispondere in questo caso alla data di scadenza del pagamento.</p>
+
+<p>Quando una riga viene convertita le azioni ad essa associate vengono ereditate dalla riga figlio. Viene anche aggiunta una azione con owner Sistema, data della conversione e descrizione: Convertito da....</p>
+
+<p>In questo modo si potrà analizzare tutta la storia delle attività svolte per quell&#39;operazione dalla sua nascita in Prospect fino alla sua conclusione in Attuali.</p>
+
+<h2 id="toc_8">Le colonne delle righe operazioni</h2>
+
+<p>Tutte le colonne delle righe operazioni sono funzionali alle analisi che vengono effettuate nelle viste del programma.</p>
+
+<p>Partendo da sinistra:</p>
+
+<ul>
+<li><strong>Numero (#)</strong>: E&#39; un numero di riga, può essere utile per identificare la riga in modo univoco in fase di esportazione CSV</li>
+<li><strong>A</strong>: Anno in cui la riga entra effettivamente nel cashflow</li>
+<li><strong>M</strong>: Mese in cui la riga entra effettivamente  nel cashflow</li>
+<li><strong>G</strong>: Giorno in cui la riga entra effettivamente  nel cashflow</li>
+<li><strong>Checkbox</strong>: può assumere significati differenti in base alla sezione:
+
+<ul>
+<li>Attuale: pagata si/no</li>
+<li>Ordini: evaso si/no</li>
+<li>Prospect: vinto si/no</li>
+<li>Budget: raggiunto si/no</li>
+</ul></li>
+<li><strong>Conto</strong>: è il conto in cui verranno raggruppate le voci a livello di PIVOT</li>
+<li><strong>Referenza</strong>: è il dettaglio del conto, un cliente, un fornitore, un asset</li>
+<li><strong>ID Tr.</strong>: può assumere significati differenti in base alla sezione:
+
+<ul>
+<li>Attuale: numero del documento associato (fattura, ricevuta, contratto, etc)</li>
+<li>Ordini: numero dell&#39;ordine di acquisto o vendita</li>
+<li>Prospect: numero dell&#39;offerta di acquisto o vendita</li>
+<li>Budget: può identificare un ulteriore livello di dettaglio, non sempre viene usato</li>
+</ul></li>
+<li><strong>Data</strong>: può assumere un significato differente in base alla sezione:
+
+<ul>
+<li>Attuale: data di scadenza del pagamento (può essere differente da A-M-G)</li>
+<li>Ordini: data di evasione dell&#39;ordine</li>
+<li>Prospect: data di scadenza dell&#39;offerta</li>
+<li>Budget: data in cui si prevede di vendere o acquistare un bene o servizio</li>
+</ul></li>
+<li><strong>Ammontare</strong>: importo imponibile della riga</li>
+<li><strong>IVA</strong>: Aliquota IVA in percentuale</li>
+<li><strong>Totale</strong>: imponibile + IVA</li>
+</ul>
+
+<h2 id="toc_9">Regole dei colori</h2>
+
+<p>Le righe delle operazioni possono assumere differenti colorazioni a seconda dello stato in cui si trovano:</p>
+
+<ul>
+<li><strong>Nero</strong>: nulla da segnalare</li>
+<li><strong>Azzurrino</strong>: la riga è stata convertita da una sezione precedente, ad esempio: se vedo una riga azzurrina negli Ordini significa che è stata convertita da Prospect</li>
+<li><strong>Arancione</strong>: la data di scadenza della riga è passata e la check-box della riga non è selezionata</li>
+<li><strong>Rosso</strong>: la data di ingresso nel cashflow della riga è passata e la check-box della riga non è selezionata</li>
+</ul>
+
+<p>I colori sopra elencati vengono sovrascritti dal successivo, es: se una riga è convertita, quindi azzurrina, in caso di scadenza passata sarà comunque arancione o rossa.</p>
+
+<h2 id="toc_10">Come inserire le operazioni</h2>
+
+<h3 id="toc_11">Operazioni che si ripetono nel tempo</h3>
+
+<p>Selezionata la sezione interessata tra Attuale, Ordini, Prospect e Budget cliccheremo sul pulsante <code>Aggiungi</code>. Una nuova riga viene inserita in fondo alla tabella.
+Immaginiamo di voler inserire le righe inerenti i costi dell&#39;affitto mensile.
+Sappiamo che l&#39;importo annuale è di € 9.600,00.
+Andremo ad inserire quindi la riga compilando tutti i campi.
+A: 2022
+M: 1
+G: 6
+Conto: Affitto
+Referenza: Ufficio
+ID Tr: <numero del contratto>
+Data: 06/01/2022
+Ammontare: 9600
+Iva: 0</p>
+
+<p>Adesso possiamo &quot;splittare&quot; la riga appena inserita cliccando sul campo &quot;numero&quot; per selezionarla, poi cliccando su <code>Dividi</code> apparirà una finestra di dialogo come segue:</p>
+
+<p><img src="images/Forecast_split_operazione.png" alt="Forecast Azioni"></p>
+
+<p>Impostando il campo &quot;Dividi riga selezionata&quot; a 12, selezionando la casella &quot;Dividi ammontare&quot; e selezionando &quot;Incrementa di Mese&quot; verranno costruite altre 11 righe con importo di € 800,00 e scadenze incrementali di un mese.</p>
+
+<h3 id="toc_12">Operazioni Acconto-Saldo</h3>
+
+<p>Nel caso di un offerta a cliente di cui sappiamo già, in caso di ordine, che avremo un acconto con pagamento all&#39;ordine di € 2.000,00 e un saldo a consegna lavoro di € 8.000,00 per un totale di € 10.000,00 più IVA 22%, è consigliabile già nei Prospect inserire le due righe, con differenti date di ingresso nel cashflow e importi.
+Le due righe avranno in comune, oltre al conto e la referenza, anche l&#39;ID Transazione, che potrebbe essere il numero di offerta.
+Le azioni da svolgere per &quot;portare a casa il lavoro&quot; verranno inserite su una delle due voci (forse meglio sulla prima delle due).</p>
+
+<h2 id="toc_13">Come modificare le operazioni</h2>
+
+<p>Le operazioni possono essere modificate singolarmente cliccando sulla cella desiderata e modificandone il valore.
+Volendo modificare più righe in un colpo solo è necessario selezionarle (Click + Shift) e poi cliccare su <code>Modifica multi</code> per far comparire la finestra di dialogo come segue:</p>
+
+<p><img src="images/Forecast_modifica_multi.png" alt="Forecast Azioni"></p>
+
+<p>La modifica può essere operata sui campi mostrati nella finestra di dialogo. Verranno modificati solo i campi che verranno compilati.</p>
+
+<p>Particolare attenzione va posta alla funzione &quot;Operazione&quot; che permette di spostare in blocco righe di operazioni da un mese all&#39;altro o giorno o anno. Ad esempio, inserendo il valore 1 nella casella M e lasciando la selezione su &quot;Aggiungi&quot; tutte le righe selezionate verranno automaticamente spostate avanti di un mese per l&#39;ingresso nel flusso di cassa.</p>
+
+<h2 id="toc_14">Le azioni</h2>
+
+<p><img src="images/Forecast_Azioni.png" alt="Forecast Azioni"></p>
+
+<p>Ogni operazione può essere associata ad una o più azioni da svolgere perchè la stessa si concretizzi entro la data prefissata e possa passare ad esempio da Ordine ad Attuale. Ogni azione viene associata ad un &quot;Responsabile&quot; che se ne occupa, ad una data di scadenza e può essere smarcata come compiuta.</p>
+
+<p>La combinazione di operazioni e azioni consente di mantenere il focus sulle cose realmente importanti e dare le giuste priorità alle attività aziendali.</p>
+
+<p>Per attivare il pannello di elenco delle azioni associate ad un operazione si clicca sulla icona &quot;Azioni&quot;.
+Evidenziando la riga dell&#39;operazione interessata verranno visualizzate le relative azioni.</p>
+
+<p>E&#39; possibile memorizzare delle sequenze di azioni in &quot;modelli&quot; riutilizzabili.</p>
+
+<h2 id="toc_15">Le viste analitiche</h2>
+
+<h3 id="toc_16">Operazioni</h3>
+
+<p>La vista operazioni è quella che consente di capire &quot;cosa dobbiamo fare oggi ?&quot;. Selezionando la check-box &quot;Prossime azioni&quot; verranno mostrate solo le prime in ordine temporale di ogni operazione, così da concentrare l&#39;attenzione sulle prime cose fattibili. La vista è filtrabile anche in altri modi. Molto utile è il filtro per &quot;Responsabile&quot; che ci permette di vedere di che cosa si deve occupare ogni singolo responsabile.</p>
+
+<p><img src="images/Forecast_Operazioni.png" alt="Forecast Operazioni"></p>
+
+<h3 id="toc_17">Flusso di cassa</h3>
+
+<p>Seguono alcuni esempi di analisi del flusso di cassa. Forecasto permette di analizzare il flusso di cassa considerando i diversi orizzonti temporali, dall&#39;Attuale al Budget, simulando alla profondità desiderata considerando quindi la situazione in caso di acquisizione ordini, conversione o meno di clienti. Questa vista mette in evidenza di colore rosso le righe (giorni, mesi o anni) in cui il saldo va in negativo.</p>
+
+<h4 id="toc_18">Mensile inclusi i prospect</h4>
+
+<p><img src="images/Forecast_cashflow_monthly.png" alt="Forecast flusso di cassa mensile"></p>
+
+<h4 id="toc_19">Giornaliero inclusi i prospect</h4>
+
+<p><img src="images/Forecast_cashflow_daily.png" alt="Forecast flusso di cassa giornaliero"></p>
+
+<h4 id="toc_20">Mensile incluso il budget</h4>
+
+<p><img src="images/Forecast_cashflow_budget_monthly.png" alt="Forecast flusso di cassa mensile con budget"></p>
+
+<h3 id="toc_21">Pivot sui conti con bilancio</h3>
+
+<p>Un controllo sui costi e sui ricavi è sempre importante per individuare situazioni che alla lunga possono nuocere all&#39;azienda. Inoltre, poter simulare il bilancio su base mese o anno considerando Attuale, Ordini, Prospect e Budget è di grande utilità per verificare che i target di costi e ricavi rispondano alle esigenze di bilancio a breve e lungo termine.</p>
+
+<h4 id="toc_22">Annuale con budget</h4>
+
+<p><img src="images/Forecast_balance_pivot_yearly.png" alt="Forecast bilancio annuale con budget"></p>
+
+<h4 id="toc_23">Mensile con budget</h4>
+
+<p><img src="images/Forecast_balance_pivot_monthly.png" alt="Forecast bilancio annuale con budget"></p>
+
+<hr>
+
+<h2 id="toc_24">Copyright</h2>
+
+<p><strong>Forecasto</strong> è un software realizzato da Carlo Cassinari (c) 2022</p>
 
 
 
