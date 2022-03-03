@@ -44,14 +44,24 @@ Tutte le trattative in corso possono essere inserite nella sezione Prospect. Tip
 ![Forecast Attuale](images/Forecast_Budget.png)
 In questa sezione possono trovare posto tutte le voci sia di costo che di ricavo previste nel tempo, ma non certe. Solitamente si inseriscono i costi e i ricavi derivanti dalle vendite mensili di prodotti e servizi commercializzati dall'azienda.
 
-## La timeline di Forecasto
+## Il ciclo di vita di un operazione
 
-Dal Budget agli Attuali, attraverso Prospect e Ordini, questo è il percorso completo che un operazione compie.
-Le operazioni però possono entrare anche direttamente in una sezione, ad esempio: la voce AFFITTO può entrare negli actual se il contratto già esiste e si impostano le scadenze di pagamento mese per mese.
+Dal **Budget** agli **Attuali**, attraverso **Prospect** e **Ordini**, questo è il percorso completo che un operazione compie.
 
-## I campi delle righe operazioni
+Le operazioni però possono entrare anche direttamente in una sezione, ad esempio: la voce AFFITTO può entrare subito nell'Attuale se il contratto già esiste e si impostano le scadenze di pagamento mese per mese.
 
-Tutti i campi delle righe operazioni sono funzionali alle analisi che vengono effettuate nelle viste del programma.
+Al contrario, un operazione che entra nel Prospect come offerta inviata a cliente, quando si riceverà l'ordine verrà convertita e spostata nella sezione Ordini. 
+
+Quando l'ordine verrà evaso, la riga potrà essere ulteriormente convertita in Attuale. La data della sezione A-M-G dovrà corrispondere in questo caso alla data di scadenza del pagamento.
+
+Quando una riga viene convertita le azioni ad essa associate vengono ereditate dalla riga figlio. Viene anche aggiunta una azione con owner Sistema, data della conversione e descrizione: Convertito da....
+
+In questo modo si potrà analizzare tutta la storia delle attività svolte per quell'operazione dalla sua nascita in Prospect fino alla sua conclusione in Attuali.
+
+
+## Le colonne delle righe operazioni
+
+Tutte le colonne delle righe operazioni sono funzionali alle analisi che vengono effettuate nelle viste del programma.
 
 Partendo da sinistra:
 
@@ -93,6 +103,8 @@ I colori sopra elencati vengono sovrascritti dal successivo, es: se una riga è 
 
 ## Come inserire le operazioni
 
+### Operazioni che si ripetono nel tempo
+
 Selezionata la sezione interessata tra Attuale, Ordini, Prospect e Budget cliccheremo sul pulsante `Aggiungi`. Una nuova riga viene inserita in fondo alla tabella.
 Immaginiamo di voler inserire le righe inerenti i costi dell'affitto mensile.
 Sappiamo che l'importo annuale è di € 9.600,00.
@@ -112,6 +124,12 @@ Adesso possiamo "splittare" la riga appena inserita cliccando sul campo "numero"
 ![Forecast Azioni](images/Forecast_split_operazione.png)
 
 Impostando il campo "Dividi riga selezionata" a 12, selezionando la casella "Dividi ammontare" e selezionando "Incrementa di Mese" verranno costruite altre 11 righe con importo di € 800,00 e scadenze incrementali di un mese.
+
+### Operazioni Acconto-Saldo
+
+Nel caso di un offerta a cliente di cui sappiamo già, in caso di ordine, che avremo un acconto con pagamento all'ordine di € 2.000,00 e un saldo a consegna lavoro di € 8.000,00 per un totale di € 10.000,00 più IVA 22%, è consigliabile già nei Prospect inserire le due righe, con differenti date di ingresso nel cashflow e importi.
+Le due righe avranno in comune, oltre al conto e la referenza, anche l'ID Transazione, che potrebbe essere il numero di offerta.
+Le azioni da svolgere per "portare a casa il lavoro" verranno inserite su una delle due voci (forse meglio sulla prima delle due).
 
 ## Come modificare le operazioni
 
