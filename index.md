@@ -41,11 +41,11 @@ Tutte le operazioni inserite vengono considerate in tre differenti viste:
 
 - **Operazioni**: azioni da intraprendere per portare a compimento gli obiettivi rappresentati dalle operazioni
 - **Flusso di cassa**: andamento effettivo e previsionale del flusso di cassa secondo le operazioni inserite e selezionate
-- **Pivot**: raggruppamento delle operazioni in costi e ricavi, fissi e variabili, con un bilancio effettivo o previsionale
+- **Bilancio**: raggruppamento delle operazioni in costi e ricavi, fissi e variabili, con un bilancio effettivo o previsionale
 
 Monitorando costantemente questi tre aspetti avremo modo di pilotare la nostra azienda verso gli obiettivi prefissati di vendita, margine e sostenibilità del business.
 
-***Forecasto*** permette di analizzare gli aspetti **Operazioni**, **Flusso di cassa** e **Pivot** in funzione dell'orizzonte temporale che si vuole considerare: se vogliamo concentrarci sui debiti e crediti certi piuttosto che su quello che prevediamo di vendere o comprare, basterà selezionare la vista **Attuale**, mentre se vogliamo intervenire sugli ordini da emettere o da evadere selezioneremo **Ordini**. La vista **Prospect** ci permetterà di concentrarci sulle trattative in corso e fare si che si concludano nei tempi prefissati. La vista **Budget** invece servirà a non perdere di vista gli obiettivi dell'anno o del periodo selezionato, mettendo in pratica le azioni e le tattiche necessarie. 
+***Forecasto*** permette di analizzare gli aspetti **Operazioni**, **Flusso di cassa** e **Bilancio** in funzione dell'orizzonte temporale che si vuole considerare: se vogliamo concentrarci sui debiti e crediti certi piuttosto che su quello che prevediamo di vendere o comprare, basterà selezionare la vista **Attuale**, mentre se vogliamo intervenire sugli ordini da emettere o da evadere selezioneremo **Ordini**. La vista **Prospect** ci permetterà di concentrarci sulle trattative in corso e fare si che si concludano nei tempi prefissati. La vista **Budget** invece servirà a non perdere di vista gli obiettivi dell'anno o del periodo selezionato, mettendo in pratica le azioni e le tattiche necessarie. 
 
 ### Esempi per le voci Attuali
 
@@ -102,7 +102,7 @@ Partendo da sinistra:
 	- Ordini: evaso si/no
 	- Prospect: vinto si/no
 	- Budget: raggiunto si/no
-- **Conto**: è il conto in cui verranno raggruppate le voci a livello di PIVOT
+- **Conto**: è il conto in cui verranno raggruppate le voci a livello di Bilancio
 - **Referenza**: è il dettaglio del conto, un cliente, un fornitore, un asset
 - **ID Tr.**: può assumere significati differenti in base alla sezione:
 	- Attuale: numero del documento associato (fattura, ricevuta, contratto, etc)
@@ -207,9 +207,9 @@ Seguono alcuni esempi di analisi del flusso di cassa. Forecasto permette di anal
 
 ![Forecast flusso di cassa mensile con budget](images/Forecast_cashflow_budget_monthly.png)
 
-### Pivot sui conti con bilancio
+### Bilancio con conto economico
 
-Un controllo sui costi e sui ricavi è sempre importante per individuare situazioni che alla lunga possono nuocere all'azienda. Inoltre, poter simulare il bilancio su base mese o anno considerando Attuale, Ordini, Prospect e Budget è di grande utilità per verificare che i target di costi e ricavi rispondano alle esigenze di bilancio a breve e lungo termine.
+Un controllo sui costi e sui ricavi è sempre importante per individuare situazioni che alla lunga possono nuocere all'azienda. Inoltre, poter simulare il conto economico su base mese o anno considerando Attuale, Ordini, Prospect e Budget è di grande utilità per verificare che i target di costi e ricavi rispondano alle esigenze di bilancio a breve e lungo termine.
 
 #### Annuale con budget
 
