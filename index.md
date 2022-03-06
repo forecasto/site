@@ -53,20 +53,20 @@ Tutte le cose certe, ormai definite e fissate nel tempo come costi, affitti, pre
 
 Gli ordini attivi e passivi vengono inseriti in questa sezione.
 
-![Forecast Attuale](images/Forecast_Ordini.png)
+![Forecast Attuale](images/Forecast_ordini.png)
 
 
 ### Esempi per le voci Prospect
 
 Tutte le trattative in corso possono essere inserite nella sezione Prospect. Tipicamente si inseriscono i clienti tali o potenziali a cui sono state inviate offerte.
 
-![Forecast Attuale](images/Forecast_Prospect.png)
+![Forecast Attuale](images/Forecast_prospect.png)
 
 ### Esempi per le voci Budget
 
 In questa sezione possono trovare posto tutte le voci sia di costo che di ricavo previste nel tempo, ma non certe. Solitamente si inseriscono i costi e i ricavi derivanti dalle vendite mensili di prodotti e servizi commercializzati dall'azienda.
 
-![Forecast Attuale](images/Forecast_Budget.png)
+![Forecast Attuale](images/Forecast_budget.png)
 
 ## Il ciclo di vita di un operazione
 
