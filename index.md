@@ -185,7 +185,7 @@ E' possibile memorizzare delle sequenze di azioni in "modelli" riutilizzabili.
 
 La vista operazioni è quella che consente di capire "cosa dobbiamo fare oggi ?". Selezionando la check-box "Prossime azioni" verranno mostrate solo le prime in ordine temporale di ogni operazione, così da concentrare l'attenzione sulle prime cose fattibili. La vista è filtrabile anche in altri modi. Molto utile è il filtro per "Responsabile" che ci permette di vedere di che cosa si deve occupare ogni singolo responsabile.
 
-![Forecast Operazioni](images/Forecast_Operazioni.png)
+![Forecast Operazioni](images/Forecast_operazioni.png)
 
 ### Flusso di cassa
 
