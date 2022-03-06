@@ -21,10 +21,6 @@ Oltre a questo permette di verificare velocemente alcune cose come:
 - Costi mensili totali, fissi e variabili
 - Operatività quotidiana dei responsabili o reparti
 
-## Indice dei contenuti
-- [Section 1](#toc_1)
-- [Section 2](#toc_23)
-
 ## Basic concepts
 ***Forecasto*** si sviluppa sui quattro concetti portanti del business con un differente orizzonte temporale e livello di certezza:
 
