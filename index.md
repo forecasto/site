@@ -45,7 +45,7 @@ Monitorando costantemente questi tre aspetti avremo modo di pilotare la nostra a
 
 ### Esempi per le voci Attuali
 
-Tutte le cose certe, ormai definite e fissate nel tempo come costi, affitti, premi di assicurazione, abbonamente, buste paga collaboratori, fatture attive e passive vengono inserite nella sezione "Attuali".
+Tutte le cose certe, ormai definite e fissate nel tempo come costi, affitti, premi di assicurazione, abbonamenti, buste paga collaboratori, fatture attive e passive vengono inserite nella sezione "Attuali".
 
 ![Forecast Attuale](images/Forecast_Attuale.png)
 
